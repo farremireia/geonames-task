@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Search in Wikipedia</title>
+		<meta name="author" content="Mireia Farré">
+		<meta name="description" content="Wikipedia Search">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+		<link href="libs/images/favicon.ico" rel="icon">
+		<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="libs/css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+        
+        <header id="header">
+
+            <div class="container">		
+
+				<h1>Geonames</h1>
+
+			</div>
+
+		</div>
+
+		<br>
+
+		<div class="main">
+
+			<div class="container">	
+
+				<h2>1. Search in Wikipedia</h2>
+
+				<select id="selLanguage">
+					<option value="en" selected='selected'>EN</option>
+					<option value="de">DE</option>
+					<option value="es">ES</option>
+					<option value="fr">FR</option>
+					<option value="it">IT</option>
+					<option value="nl">NL</option>
+					<option value="pl">PL</option>
+					<option value="pt">PT</option>
+					<option value="ru">RU</option>
+					<option value="zh">ZH</option>
+				</select>
+
+				<br><br><br>
+
+				Search:
+				<input id='q' type='text'>
+
+				<br><br><br>
+
+				<button id="btnSearch1">Search</button>
+				
+				<br><br>
+			
+				<table>
+	
+					<tr>
+						<td>
+							Result: 
+						</td>
+						<td id="txtResult">
+						</td>
+					</tr>
+
+				</table>
+
+				<br><br><br>
+
+				<h2>2. Neighbours</h2>
+
+				Country Code:
+				<input id='countryCode' type='text'>
+
+				<br><br><br>
+
+				<button id="btnSearch2">Search</button>
+				
+				<br><br>
+	
+				<table>
+	
+					<tr>
+						<td>
+							Neighbours: 
+						</td>
+						<td id="txtNeighbours">
+						</td>
+					</tr>
+
+				</table>
+
+				<br><br><br>
+
+				<h2>3. Timezone</h2>
+
+				Latitude:
+				<input id='latitude' type='text'>
+
+				Longitude:
+				<input id='longitude' type='text'>
+
+				Date:
+				<input id="date" type="date">
+
+				<br><br><br>
+
+				<button id="btnSearch3">Search</button>	
+		
+				<br><br>
+
+				<table>
+	
+					<tr>
+						<td>
+							Timezone: 
+						</td>
+						<td id="txtTimezone">
+						</td>
+					</tr>
+
+				</table>
+
+				<br><br><br>
+
+				<h2>4. Weather</h2>
+
+				<br>
+
+				<h3>Coordinates</h3>
+
+				<br>
+
+				North:
+				<input id='north' type='text'>
+
+				South:
+				<input id='south' type='text'>
+
+				East:
+				<input id="east" type="text">
+
+				West:
+				<input id="west" type="text">
+
+				<br><br><br>
+
+				<button id="btnSearch4">Search</button>	
+		
+				<br><br>
+
+				<table>
+	
+					<tr>
+						<td>
+							Temperature in degree Celcius: 
+						</td>
+						<td id="txtWeather">
+						</td>
+					</tr>
+
+				</table>
+
+				<br><br><br>
+
+				<h2>5. Hierarchy</h2>
+
+				Geoname Id:
+				<input id='geonameId' type='text'>
+
+				<br><br><br>
+
+				<button id="btnSearch5">Search</button>	
+		
+				<br><br>
+
+				<table>
+	
+					<tr>
+						<td>
+							GeoName records: 
+						</td>
+						<td id="txtGeoname">
+						</td>
+					</tr>
+
+				</table>
+
+				<br><br><br>
+
+			</div>
+
+		</div>
+
+		<div id="preloader"></div>
+
+		<script src="libs/js/jquery-2.2.3.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
